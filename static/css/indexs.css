@@ -1,0 +1,60 @@
+.E-Courses{
+	color:white;
+	background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6));
+    padding:10px;
+}
+.login{
+   padding-top:20px;	
+}
+.center{
+	margin-top:80px;
+	display:flex;
+	justify-content:center;
+}
+.email-lable{
+  font-weight:bold;
+}
+.password-lable{
+   font-weight:bold;
+}
+.email{
+  width: 300px;
+}
+.password{
+  width: 300px;
+}
+.err{
+	display:none;
+	border-radius:20px;
+	padding:30px;
+	margin-bottom:10px;
+}
+.errtext{
+	width:300px;
+	color:white;
+	margin-left:-20px;
+}
+.circle{
+	margin-top:5px;
+	color:yellow;
+}
+.err-show{
+	display:flex;
+}
+.warning{
+   display:none;
+   padding:30px;
+   border-radius:20px;
+}
+.wr-triagle{
+	margin-top:5px;
+	color:red;
+	margin-left:10px;
+}
+.wrgtext{
+	color:red;
+	padding-left:5px;
+}
+.wrg-show{
+	display:flex;
+}

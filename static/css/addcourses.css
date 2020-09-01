@@ -1,0 +1,146 @@
+.header-buttons{
+	display:flex;
+}
+.select{
+	padding:10px;
+	background:#D3D3D3;
+	border-radius:10px;
+}
+.select:hover{
+   background:#B8B8B8;	
+}
+.selectall{
+	text-decoration:none;
+	color:#000000;
+	cursor:pointer;
+	font-family: "Segoe UI";
+    font-weight: 700;
+}
+.selectall:hover{
+	text-decoration:none;
+	color:#000000;
+}
+.add{
+	margin-left:10px;
+	cursor:pointer;
+	padding:10px;
+	text-decoration:none;
+	color:#000000;
+	background:#D3D3D3;
+	border-radius:10px;
+	margin-left:10px;
+	font-family: "Segoe UI";
+    font-weight: 700;
+}
+.add:hover{
+	color:#000000;
+	text-decoration:none;
+	background:#B8B8B8;
+}
+.delete{
+	padding:10px;
+	margin-left:10px;
+	cursor:pointer;
+	background:#D3D3D3;
+	 border-radius:10px;
+}
+.delete:hover{
+  background:#B8B8B8;
+}
+.title-list{
+  padding:10px
+}
+.list{
+	margin-top:15px;
+}
+.pd{
+	position:absolute;
+	right:10px;
+}
+.edit{
+	float:right;
+	padding:15px;
+	cursor:pointer;
+}
+.edit:hover{
+  background:#B8B8B8;
+  border-radius:10px;
+}
+.Publish{
+	float:right;
+	padding:10px;
+	font-family: "Segoe UI";
+    font-weight: 700;
+	background:#D3D3D3;
+	border-radius:10px;
+	cursor:pointer;
+}
+.publish:hover{
+	background:#B8B8B8;
+}
+.listofcourses{
+	margin-top:-15px;
+}
+.short_description{
+	width:350px;
+	height:150px;
+	resize:none;
+}
+.description{
+   	width:400px;
+	height:200px;
+	resize:none;	
+}
+.lshortdecription{
+	font-weight:bold;
+}
+.ldecription{
+   font-weight:bold;
+}
+.save{
+	padding:10px;
+	margin:10px;
+	width:70px;
+	background:#424999;
+	border-radius:10px;
+	color:white;
+	cursor:pointer;
+}
+.save:hover{
+	background:#23296E;
+}
+
+
+@media only screen and (max-width:768px){
+ 
+ .add_new{
+    margin-left:50px;
+  }
+
+}
+@media only screen and (max-width:1049px){
+ .next{
+	position:sticky;
+	
+ }
+
+}
+@media only screen and (max-width:845px){
+ .description{
+   	width:350px;
+	height:200px;
+	resize:none;	
+   }
+}
+@media only screen and (max-width:360px){
+ .short_description{
+    width:260px;
+	height:200px;
+	resize:none;
+  }
+ .description{
+   	width:260px;
+	height:200px;
+	resize:none;	
+   }
+}

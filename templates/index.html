@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="{% static 'css/indexs.css' %}" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<title>E-Dashboard</title>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a694fdef6c.js" crossorigin="anonymous"></script>
+    <script crossorigin src="https://unpkg.com/universal-cookie@3/umd/universalCookie.min.js"></script>
+</head>
+<body>
+   <div>
+   	  <h1 class="E-Courses text-center">E-Courses</h1>
+   </div>
+   <h3 class="text-center text-capitalize login">Log in</h3>
+   <!--
+    -->
+<div class="center">
+<form method="post">
+ 
+  <div class="err bg-danger">
+      <i class="fa fa-exclamation-circle circle"></i>
+      <p class="errtext text-center ">email or password is incorrect</p>
+  </div>
+  <div class="warning bg-warning ">
+      <i class="fa fa-exclamation-triangle wr-triagle" aria-hidden="true"></i><p class="wrgtext text-center">enter a valid email</p>
+  </div>
+  <div class="form-group">
+    <label class="email-lable">Email address</label>
+    <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+    <div class="form-group">
+    <label  class="password-lable">Password</label>
+    <input type="password" class="form-control" id="password">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email & password with anyone else.</small>
+   </div>
+    </div>
+    <div class="form-group form-check">
+    </div>
+    <a id='submit' type="submit" class="btn btn-primary">Submit</a>
+
+</form>
+</div>
+</body>
+<footer>
+   <script type="text/javascript" src="{% static 'js/index.js' %}"></script>
+</footer>
+</html>

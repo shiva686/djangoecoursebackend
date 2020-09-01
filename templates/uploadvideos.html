@@ -1,0 +1,65 @@
+{% extends "admin_dashboard.html" %}
+{% load static %}
+{% block nav_bar %}
+
+<ul class="dashboard-link">
+   	   	  	<li><h4 class="text-capitalize header">Dashboard</h4></li>
+   	   	  	<li><a href= "/admin/addcourse/courses" class="text-capitalize nav-link add-course active">add courses</a></li>
+   	   	  	<li><a href= "/admin/profile" class="text-capitalize nav-link">profile</a></li>
+   	   	  	<li><a href= "/admin/settings" class="text-capitalize nav-link ">settings</a></li>
+   	   	  	<li><a class="text-capitalize nav-link logout">logout</a></li>
+   	   	  </ul>
+
+{% endblock %}
+
+{% block content %}
+<script type="text/javascript" src="{% static 'js/authantications.js'%}"></script>
+   <div class="row">
+   	 <div class="col-md-12">
+   	   <from>
+   	   	 <br/>
+   	   	 <div>
+   	   	 <b class="text-capitalize">add lessions</b>
+   	   	 <a class="add-button text-capitalize text-center" data-toggle="modal" data-target="#exampleModal">add</a>
+   	   	 <div class="publish_draft">
+   	   	 <a class="add-button text-capitalize text-center">publish</a>
+   	  	 <a class="add-button text-capitalize text-center draft">darft</a>
+<!-- Modal -->
+
+   	 </div>
+   	 </div>
+   	 </from>
+   	 </div>
+       </div>
+       <br/>
+       <hr/>
+       <div>
+   	 <div class="header-buttons">
+   	 <input class="list" type="checkbox" name="list">
+   	 <p class="title-list">tile of course</p>
+   	 <div class="pd">
+   	 <i class="fa fa-pencil edit" aria-hidden="true"></i>
+       </div>
+   	 </div>
+   	 <hr class="listofcourses" />
+       </div>
+<div class="modal fade uploadmodel" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+       <div class="modal-dialog">
+       <div class="modal-content">
+       <div class="modal-header">
+       <h5 class="modal-title text-capitalize" id="exampleModalLabel">upload video</h5>
+       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+       <span aria-hidden="true">&times;</span>
+       </button>
+       </div>
+       <div class="modal-body">
+        <br/>
+        <input type="file" class="upload" name="uploadlession" accept="video/*">
+        <hr/>
+        <button type="button text-capitalize" class="btn btn-primary">submit</button>
+       </div>
+       </div>
+       </div>
+</div>
+
+{% endblock %}

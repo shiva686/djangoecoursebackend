@@ -1,0 +1,46 @@
+{% extends "admin_dashboard.html" %}
+{% load static %}
+{% block nav_bar %}
+
+<ul class="dashboard-link">
+   	   	  	<li><h4 class="text-capitalize header">Dashboard</h4></li>
+   	   	  	<li><a href= "/admin/addcourse/courses" class="text-capitalize nav-link add-course">add courses</a></li>
+   	   	  	<li><a href= "/admin/profile" class="text-capitalize nav-link active">profile</a></li>
+   	   	  	<li><a href= "/admin/settings" class="text-capitalize nav-link">settings</a></li>
+   	   	  	<li><a class="text-capitalize nav-link logout">logout</a></li>
+   	   	  </ul>
+
+{% endblock %}
+
+
+{% block content %}
+<script type="text/javascript" src="{% static 'js/authantications.js'%}"></script>
+<div class ="row profile_">
+		  <div class = "col-md-12 profile_data">
+          <div class = "flex">
+           <p class = "stu_id">Name:</p>
+           <p class = "name">Shiva</p>
+          </div>
+           <div class = "flex">
+           <p class = "stu_id">Email:</p>
+           <p class = "email">smartwebtechno898@gmail.com</p>
+          </div>
+          <hr/>
+           <p class = "change_password">change password</p> 
+           <div class = "block">
+           <p class = "stu_id">old password:</p>
+           <input type="password" name="password" class = "oldpassword"/>
+          </div>
+          <div class = "block">
+           <p class = "stu_id">new password:</p>
+           <input type="password" name="password" class = "newpassword"/>
+          </div>
+          <div class = "block">
+           <p class = "stu_id">confirm password:</p>
+           <input type="password" name="password" class = "comfirmpassword"/>
+          </div>
+		  </div>
+		    <a class="btn- change">submit</a>
+</div>
+<script type="text/javascript" src="{% static 'js/changepassword.js' %}"></script>
+{% endblock %}

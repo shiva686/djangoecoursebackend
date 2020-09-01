@@ -1,0 +1,51 @@
+.submit{
+    width:80px;
+    padding:10px;
+    color:white;
+    background:#8289D6;
+    border-radius:10px;
+    cursor:pointer;
+  }
+  .submit:hover{
+    background:#525572;
+  }
+  .edit{
+    margin-top:-10px;
+  }
+  .studiv{
+      display: flex;
+      justify-content:space-between;
+    }
+   .std_{
+     margin-right:40px;
+     color:white;
+     width:80px;
+     background:#8289D6;
+     padding:10px;
+     border-radius:15px;
+     cursor: pointer;
+   }
+   .std_:hover{
+    background:#525572;
+   }
+  .studentdetails{
+    display:flex;
+    justify-content:flex-start;
+  }
+  .md{
+    margin-left: 135px;
+  }
+  .btn_model{
+    display:none;
+  }
+  .student_list{
+    cursor:pointer;
+  }
+  .td{
+    margin-left:40px;
+  }
+  @media only screen and (max-width: 768px){
+    .md{
+      margin-left:0;
+    }
+  }

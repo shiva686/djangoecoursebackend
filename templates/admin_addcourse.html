@@ -1,0 +1,69 @@
+{% extends "admin_dashboard.html" %}
+{% load static %}
+
+{% block nav_bar %}
+
+<ul class="dashboard-link">
+   	   	  	<li><h4 class="text-capitalize header">Dashboard</h4></li>
+   	   	  	<li><a href= "/admin/addcourse/courses" class="text-capitalize nav-link add-course active">add courses</a></li>
+   	   	  	<li><a href= "/admin/profile" class="text-capitalize nav-link">profile</a></li>
+   	   	  	<li><a href= "/admin/settings" class="text-capitalize nav-link">settings</a></li>
+   	   	  	<li><a class="text-capitalize nav-link logout">logout</a></li>
+   	   	  </ul>
+
+{% endblock %}
+{% block content %}
+
+ {% if mode == "courses"%}
+ <script type="text/javascript" src="{% static 'js/authantications.js'%}"></script>
+<div class="header-buttons">
+   <div class="select">
+   <input class="lis" type="checkbox" name="checkselectall">
+   <a class="selectall">Select All</a>
+   </div>
+   <a class="add">Add</a>
+   <i class="fa fa-trash delete" aria-hidden="true"></i>
+   </div>
+   <br/>
+   <br/>
+   <div id="list_of_title">
+   <!-- 
+   	 <div class="header-buttons">
+   	 	<input class="list" type="checkbox" name="list">
+   	 	<p class="title-list">{{i}}</p>
+   	 	<div class="pd">
+   	 	<i class="fa fa-pencil edit" aria-hidden="true"></i>
+   	 	<p class="Publish">Publish</p>
+   	  </div>
+   	 </div>
+   	 <hr class="listofcourses" />
+    -->
+   </div>
+    <script type="text/javascript" src="{% static 'js/getcourses.js'%}"></script>
+    <script type="text/javascript" src="{% static 'js/addnew.js'%}"></script>
+
+ {% elif mode == "addnewcourse"%}
+ <script type="text/javascript" src="{% static 'js/authantications.js'%}"></script>
+  <form class="add_new">
+     <label><b>title</b></label>
+     <br/>
+     <input type="text" name="name" class="title">
+     <br/>
+     <br/>
+     <label><b>thumbail</b></label>
+     <br/>
+     <input type="file" name="thumbail" class="thumbail" accept="image/*"/>
+     <br/>
+     <label class="lshortdecription">short description</label>
+     <br/>
+     <textarea class="short_description"></textarea>
+     <br/>
+     <label class="ldecription">description</label>
+     <br/>
+     <textarea class="description"></textarea>
+      <p class="save next text-center">next</p>
+  </form>
+    <script type="text/javascript" src="{% static 'js/addcouse.js'%}"></script>
+    
+ {% endif %}
+{% endblock %}

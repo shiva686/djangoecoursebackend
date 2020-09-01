@@ -1,0 +1,109 @@
+.logo{
+	width:250px;
+	float:right;
+}
+.websitename{
+	margin-left:-10px;
+	float:left;
+}
+.About{
+	resize:none;
+	width:300px;
+	height:200px;
+}
+.lablewebname{
+  font-family: "Segoe UI";
+  font-weight: 900;
+}
+.lableabout{
+  font-family: "Segoe UI";
+  font-weight: 900;
+}
+.btn_{
+	margin-top:10px;
+	padding:10px;
+	color:white;
+	background-color:#8289D6;
+	text-decoration: none;
+	cursor:pointer;
+	float:left;
+	border-radius:10px;
+}
+.btn_:hover{
+	text-decoration: none;
+	color:white;
+	background-color:#525572;
+}
+.submit{
+    width:80px;
+    padding:10px;
+    color:white;
+    background:#8289D6;
+    border-radius:10px;
+    cursor:pointer;
+  }
+  .submit:hover{
+    background:#525572;
+  }
+  .edit{
+    margin-top:-10px;
+  }
+  .studiv{
+      display: flex;
+      justify-content:space-between;
+    }
+   .std_{
+     margin-right:40px;
+     color:white;
+     width:80px;
+     background:#8289D6;
+     padding:10px;
+     border-radius:15px;
+     cursor: pointer;
+   }
+   .std_:hover{
+    background:#525572;
+   }
+  .studentdetails{
+    display:flex;
+    justify-content:flex-start;
+  }
+  .md{
+    margin-left: 135px;
+  }
+  .btn_model{
+    display:none;
+  }
+  .student_list{
+    cursor:pointer;
+  }
+  .td{
+    margin-left:40px;
+  }
+  .signup_submit{
+  	width:40px;
+  	background:#8289D6;
+    padding:10px;
+    border-radius:15px;
+    cursor: pointer;
+    color:white;
+    text-decoration:none;
+  }
+  .signup_submit:hover{
+  	color:white;
+  	background:#525572;
+  	text-decoration:none;
+  }
+  @media only screen and (max-width: 768px){
+    .md{
+      margin-left:0;
+    }
+  }
+@media only screen and (max-width: 768px){
+.logo{
+	float:left;
+  }
+.websitename{
+   margin-left:20px;
+ }
+}

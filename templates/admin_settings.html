@@ -1,0 +1,135 @@
+{% extends "admin_dashboard.html" %}
+{% load static %}
+{% block nav_bar %}
+
+<ul class="dashboard-link">
+   	   	  	<li><h4 class="text-capitalize header">Dashboard</h4></li>
+   	   	  	<li><a href= "/admin/addcourse/courses" class="text-capitalize nav-link add-course">add courses</a></li>
+   	   	  	<li><a href= "/admin/profile" class="text-capitalize nav-link">profile</a></li>
+   	   	  	<li><a href= "/admin/settings" class="text-capitalize nav-link active">settings</a></li>
+   	   	  	<li><a class="text-capitalize nav-link logout">logout</a></li>
+   	   	  </ul>
+
+{% endblock %}
+
+
+{% block content %}
+<link href="{% static 'css/addtinalsettings.css' %}" rel="stylesheet">
+<script type="text/javascript" src="{% static 'js/authantications.js'%}"></script>
+    <div class="row">
+    	<div class="col-md-4">
+    		<img class="logo" src="{% static 'image/logo.jpg' %}" />
+    	</div>
+    	<div class="col-md-6 websitename">
+    		<form>
+    			<label class="lablewebname">Website Name</label>
+    			<br/>
+    			<input class="webname" type="text" name="websitename">
+    			<br/>
+    			<label class="lableabout">About Us</label>
+    			<br/>
+    			<textarea class="About" type="textarea"></textarea>
+    			<br/>
+    			<p><a class="btn_ webnamesubmit">submit</a></p>
+    		</form>
+    	</div>
+    </div>
+    <script type="text/javascript" src="{% static 'js/settings.js' %}"></script>
+    <hr/>
+
+<!-- Modal -->
+
+<div class="modal fade md" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Student data</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body studentdetails">
+       <!--  <table>
+          <tr>
+          <td><p>studen id</p></td>
+          <td><p class="td">1234</p></td>
+          </tr>
+          <tr>
+          <td><p>name</p></td>
+          <td><p class="td">name</p></td>
+          </tr>
+          <tr>
+          <td><p>email</p></td>
+          <td><p class="td">email</p></td>
+          </tr>
+       </table> -->
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade md" id="addstudent" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Student data</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div>
+        <table>
+          <tr>
+          <td class="text-capitalize"><p>name</p></td>
+          <td><input type="text" class="name" name="name"/></td>
+          </tr>
+          <tr>
+          <td class="text-capitalize">email</td>
+          <td><input type="email" class="email" name="email"/></td>
+          </tr>
+          <tr>
+          <td class="text-capitalize">password</td>
+          <td><input type="password"class="password" name="padding"></td>
+          </tr>
+          <tr>
+          <td class="text-capitalize">corfirm password</td>
+          <td><input type="password" class="corfirm_password" name="padding"></td>
+          </tr>
+       </table>
+     </div>
+       <br/>
+       <a class="signup_submit text-center">submit</a>
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- Button trigger modal -->
+<button type="button" class="btn btn_model btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Launch demo modal
+</button>
+    <div class="studiv"><h4 class="text-center stu_ text-capitalize">Students</h4><p class="std_ text-center" data-toggle="modal" data-target="#addstudent"
+      >Add</p></div>
+    <div id="student_list">
+    <!-- <div class="numberofstudent">
+     <div class="header-buttons">
+      <p class="title-list">student_id</p>
+      <div class="pd">
+      <i class="fa fa-trash edit" aria-hidden="true"></i>
+      </div>
+     </div>
+     <hr class="listofcourses" />
+    </div> -->
+    </div>
+    <style type="text/css">
+      .btn_model{
+        display: none;
+      }
+
+    </style>
+    <script type="text/javascript" src="{% static 'js/numberofstudent.js' %}"></script>
+ 
+{% endblock %}

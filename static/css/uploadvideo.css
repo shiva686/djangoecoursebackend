@@ -1,0 +1,33 @@
+
+.add-button{
+	color:white;
+	padding:10px;
+	margin-left:10px;
+	background:#424999;
+	border-radius:10px;
+	cursor:pointer;
+	text-decoration:none;
+}
+.add-button:hover{
+	color:white;
+	text-decoration:none;
+	background:#292F70;
+}
+.title{
+	margin-left:1px;
+}
+.publish_draft{
+	position:absolute;
+	top:25px;
+	right:50px;
+}
+.uploadmodel{
+	position:absolute;
+	z-index: 111111111111111;
+}
+@media only screen and (max-width: 388px){
+  .publish_draft{
+	position:relative;
+    padding: 40px;
+}
+}
