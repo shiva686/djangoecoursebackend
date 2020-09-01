@@ -26,7 +26,7 @@ SECRET_KEY = 'a%vdohxroqpsk0+^a0&qb+q3jj7l7hgaae&6pg=6%4)a2!0rqm'
 DEBUG = False
 
 ALLOWED_HOSTS = [
- "https://djangoecourses.herokuapp.com","https://ecourses-53958.web.app","https://ecourses-53958.firebaseapp.com","localhost"]
+ "https://djangoecourses.herokuapp.com","https://ecourses-53958.web.app","https://ecourses-53958.firebaseapp.com"]
 
 
 # Application definition
