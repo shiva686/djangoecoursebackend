@@ -25,7 +25,7 @@ SECRET_KEY = 'a%vdohxroqpsk0+^a0&qb+q3jj7l7hgaae&6pg=6%4)a2!0rqm'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = [ "https://djangoecourses.herokuapp.com/"]
+ALLOWED_HOSTS = [ "https://djangoecourses.herokuapp.com/" , "https://ecourses-53958.web.app/"]
 
 
 # Application definition
