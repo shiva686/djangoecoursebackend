@@ -27,10 +27,16 @@ DEBUG = False
 
 ALLOWED_HOSTS = [
 
- "https://djangoecourses.herokuapp.com","https://ecourses-53958.web.app","https://ecourses-53958.firebaseapp.com","localhost"]
+ "https://djangoecourses.herokuapp.com",
+ "https://ecourses-53958.web.app",
+ "https://ecourses-53958.firebaseapp.com",
+ "localhost"]
 
 CORS_ORIGIN_WHITELIST = [
-    "https://djangoecourses.herokuapp.com","https://ecourses-53958.web.app","https://ecourses-53958.firebaseapp.com","localhost"
+    "https://djangoecourses.herokuapp.com",
+    "https://ecourses-53958.web.app",
+    "https://ecourses-53958.firebaseapp.com",
+    "localhost"
 ]
 
 # Application definition
@@ -59,9 +65,9 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    "https://example.com",
-    "https://sub.example.com",
-    "http://localhost:3000",
+"https://djangoecourses.herokuapp.com",
+    "https://ecourses-53958.web.app",
+    "https://ecourses-53958.firebaseapp.com",
 ]
 
 CORS_ALLOW_METHODS = [
