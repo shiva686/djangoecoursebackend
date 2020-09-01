@@ -1,8 +1,8 @@
 
-let webnamesubmit = document.getElementsByClassName('webnamesubmit')
+let webnamesubmi = document.getElementsByClassName('webnamesubmit')
 let webname = document.getElementsByClassName('webname')
 let About = document.getElementsByClassName('About')
-webnamesubmit[0].addEventListener('click',()=>{
+webnamesubmi[0].addEventListener('click',()=>{
    let data ={
      "websitename":webname,
      "aboutwebsite":About
