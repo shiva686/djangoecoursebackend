@@ -1,4 +1,4 @@
-let backend = 'http://localhost:8000/api/admin/websitedetails'
+let backend = 'https://djangoecourses.herokuapp.com/api/admin/websitedetails'
 let webnamesubmit = document.getElementsByClassName('webnamesubmit');
 
 webnamesubmit[0].addEventListener('click',()=>{

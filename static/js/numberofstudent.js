@@ -1,4 +1,4 @@
-fetch('http://localhost:8000/api/admin_students_list')
+fetch('https://djangoecourses.herokuapp.com/api/admin_students_list')
 .then(res=>{
 	if(res.ok){
 		return res.json()
@@ -33,7 +33,7 @@ for(let i=0; i<len; i++){
 		let data={
 			"email":res[j].email
 		}
-		fetch('http://localhost:8000/api/deleteuser',{
+		fetch('https://djangoecourses.herokuapp.com/api/deleteuser',{
 			method:'POST',
 			headers:{
 				'Content-Type':'application/json'
@@ -69,7 +69,7 @@ signup_submit[0].addEventListener('click',()=>{
   	 			'email':email[0].value,
   	 			'password':password[0].value
   	 		}
-  	 		fetch('http://localhost:8000/api/usersignup',{
+  	 		fetch('https://djangoecourses.herokuapp.com/api/usersignup',{
   	 			method:'POST',
   	 			headers:{
   	 				'Content-Type':'application/json'

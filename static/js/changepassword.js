@@ -1,4 +1,4 @@
-let backend = 'http://localhost:8000/api/admin/changepassword' 
+let backend = 'https://djangoecourses.herokuapp.com/api/admin/changepassword' 
 let submit = document.getElementsByClassName('change');
 submit[0].addEventListener('click' , ()=>{
     let oldpassword = document.getElementsByClassName('oldpassword')

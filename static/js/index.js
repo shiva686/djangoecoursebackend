@@ -1,4 +1,4 @@
-let backend = 'http://localhost:8000/api/adminlogin'
+let backend = 'https://djangoecourses.herokuapp.com/api/adminlogin'
 let submit = document.getElementById('submit')
     submit.addEventListener('click',(e)=>{
     let password = document.getElementById('password')

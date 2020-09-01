@@ -12,7 +12,7 @@ for (let i=0; i<length; i++){
    resolve(value)
 })
 promise.then(value =>{
-	fetch('http://localhost:8000/api/admin/authlogin',{
+	fetch('https://djangoecourses.herokuapp.com/api/admin/authlogin',{
     method:'POST',
     headers:{
     	'Content-Type': 'application/json',

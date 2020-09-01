@@ -1,5 +1,5 @@
 try{
-fetch('http://localhost:8000/api/admin/courses')
+fetch('https://djangoecourses.herokuapp.com/api/admin/courses')
 .then(res=>{
 	  if(res.ok){
             return res.json()
@@ -56,7 +56,7 @@ let promise = new Promise((resolve, reject)=>{
 promise.then(data=>{
  
    if(data != undefined && data != {}){
-   let backend = "http://localhost:8000/api/admin/deletecourse"
+   let backend = "https://djangoecourses.herokuapp.com/api/admin/deletecourse"
    fetch(backend ,{
 		 	method: 'POST',
 		 	headers:{
