@@ -21,5 +21,6 @@ urlpatterns = [
    path('api/mycourse',views.mycourses.as_view()),
    path('api/buycourse',views.selectedcourse.as_view()),
    path('api/websitedetails',views.websitedetails.as_view()),
+   path('api/addwebsitedetails',views.websitedetails.as_view()),
    path('api/admin_students_list',views.admin_students_list.as_view()),
 ]

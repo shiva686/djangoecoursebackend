@@ -42,7 +42,7 @@ if(next.length != 0){
                   }
               }).then(res=>{
                 if(res != undefined){
-                   window.location.assign('/admin/uploadvideos/'+res)
+                   window.location.assign('/admin/addcourse/courses')
                 }
               }).catch(e => alert('something went wrong'))
          })

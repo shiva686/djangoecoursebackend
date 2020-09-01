@@ -360,3 +360,20 @@ class deleteuser(APIView):
 			return Response('err',status=status.HTTP_404_NOT_FOUND)
 		
 		
+class addwebsitedetails(APIView):
+	def post(self, request):
+		websitename = request.data['websitename']
+		aboutwebsite = request.data['aboutwebsite']
+		login = request.session['login']
+		if login == True:
+			try:
+				web = website.objects.get(websitename='E-Courses')
+				web.websitename = websitename
+				web.aboutwebsite = aboutwebsite
+				web.save()
+			except:
+				web = website(websitename=websitename,aboutwebsite=aboutwebsite)
+				web.save()
+			return Response('ok',status=status.HTTP_200_OK)
+		else:
+			return Response('err',status=status.HTTP_404_NOT_FOUND)
