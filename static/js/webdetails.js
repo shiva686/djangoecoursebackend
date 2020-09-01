@@ -1,11 +1,11 @@
 
 let webnamesubmi = document.getElementsByClassName('webnamesubmit')
 let webname = document.getElementsByClassName('webname')
-let About = document.getElementsByClassName('About')
+let about = document.getElementsByClassName('About')
 webnamesubmi[0].addEventListener('click',()=>{
    let data ={
-     "websitename":webname,
-     "aboutwebsite":About
+     "websitename":webname[0].value,
+     "aboutwebsite":about[0].value
 	}
    fetch('https://djangoecourses.herokuapp.com/api/addwebsitedetails',{
    	method:'POST',
